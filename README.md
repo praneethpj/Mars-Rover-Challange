@@ -5,9 +5,9 @@ To Execute the Application,
 
 Please find the Driver class name com.nasa.rover.main.Driver 
 
-##INPUT AND OUTPUT
+*INPUT AND OUTPUT*
 
-######Test Inputs:
+**Test Inputs:**
 
 5 5
 
@@ -20,7 +20,7 @@ LMLMLMLMM
 MMRMMRMRRM
 
 
-######Expected Outputs:
+**Expected Outputs:**
 
 1 3 N
 
