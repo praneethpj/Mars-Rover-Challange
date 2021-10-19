@@ -1,7 +1,9 @@
 # Mars-Rover-Challange
 THE MARS ROVER CHALLENGE
 
-Please find the Driver class name com.nasa.rover.main.Driver to Execute the Application
+To Execute the Application,
+
+Please find the Driver class name com.nasa.rover.main.Driver 
 
 # Main Flow of the Solution
 
