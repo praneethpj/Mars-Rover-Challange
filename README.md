@@ -5,6 +5,27 @@ To Execute the Application,
 
 Please find the Driver class name com.nasa.rover.main.Driver 
 
+INPUT AND OUTPUT
+
+Test Inputs:
+
+5 5
+
+1 2 N
+
+LMLMLMLMM
+
+3 3 E
+
+MMRMMRMRRM
+
+
+Expected Outputs:
+
+1 3 N
+
+5 1 E
+
 # Main Flow of the Solution
 
 1. Get User Inputs and Validation.
