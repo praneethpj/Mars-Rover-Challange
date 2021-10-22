@@ -3,26 +3,15 @@
  */
 package com.nasa.rover.controller.compasser;
 
+import com.nasa.rover.controller.compasser.enums.OrientationRightEnum;
 import com.nasa.rover.dao.Compass;
 import com.nasa.rover.model.Arrow;
-import com.nasa.rover.constant.OrientationType;
 
 public class OrientationRight implements Compass {
 
     @Override
-    public char getNextOrientation(Arrow arrow) {
-        switch (arrow.getHead()) {
-            case OrientationType.N:
-                return OrientationType.E;
-            case OrientationType.W:
-                return  OrientationType.N;
-            case OrientationType.S:
-                return OrientationType.W;
-            case OrientationType.E:
-                return OrientationType.S;
+    public String getNextOrientation(Arrow arrow) {
+        return  OrientationRightEnum.valueOf(arrow.getHead()).getDirection();
 
-
-        }
-        return '0';
     }
 }

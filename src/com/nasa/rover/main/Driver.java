@@ -11,7 +11,6 @@ public class Driver {
     public static void main(String[] args) {
         ////Number of Rovers count is 2
         final int numberOfRovers=2;
-        System.out.println("Please Enter Inputs for rovers count : "+numberOfRovers);
 
         UserInputReader userInputReader=new UserInputReader();
 

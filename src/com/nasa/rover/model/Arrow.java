@@ -6,20 +6,20 @@ package com.nasa.rover.model;
 public class Arrow {
 
     public Arrow(){ }
-    public Arrow(Coordinate coordinate,char head){
+    public Arrow(Coordinate coordinate,String head){
         this.head=head;
         this.coordinate=coordinate;
     }
 
-    public char getHead() {
+    public String getHead() {
         return head;
     }
 
-    public void setHead(char head) {
+    public void setHead(String head) {
         this.head = head;
     }
 
-    private char head;
+    private String head;
 
     public Coordinate getCoordinate() {
         return coordinate;

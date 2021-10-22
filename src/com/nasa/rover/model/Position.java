@@ -6,14 +6,14 @@ package com.nasa.rover.model;
 
 public class Position extends Coordinate {
 
-    public char getInitOrientationType() {
+    public String getInitOrientationType() {
         return initOrientationType;
     }
 
 
 
-    private char initOrientationType;
-    public   char orientationType(char orientationType){
+    private String initOrientationType;
+    public   String orientationType(String orientationType){
        this.initOrientationType=orientationType;
         return orientationType;
     }

@@ -4,15 +4,12 @@
 package com.nasa.rover.controller;
 
 
-import com.nasa.rover.constant.OrientationType;
-import com.nasa.rover.controller.Rover;
 import com.nasa.rover.exeptions.WrongPosition;
 import com.nasa.rover.model.Coordinate;
 import com.nasa.rover.model.Position;
 import com.nasa.rover.model.Surface;
 import com.nasa.rover.valiation.InputValidation;
 import com.sun.org.apache.xpath.internal.functions.WrongNumberArgsException;
-import javafx.geometry.Pos;
 
 import java.util.Scanner;
 
@@ -68,7 +65,7 @@ public class UserInputReader {
         position.setX(tmpX);
         position.setY(tmpY);
         try {
-            position.orientationType(OrientationType.getOrientationType(tmpPostion[2].charAt(0)));
+            position.orientationType(inputValidation.getOrientationType(String.valueOf(tmpPostion[2])));
         } catch (WrongNumberArgsException e) {
             e.printStackTrace();
         }

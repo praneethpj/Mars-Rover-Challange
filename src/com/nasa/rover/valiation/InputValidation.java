@@ -3,17 +3,19 @@
  */
 package com.nasa.rover.valiation;
 
+import com.nasa.rover.constant.OrientationTypeEnum;
 import com.nasa.rover.constant.SurfaceType;
 import com.nasa.rover.model.Coordinate;
 import com.nasa.rover.model.Surface;
+import com.sun.org.apache.xpath.internal.functions.WrongNumberArgsException;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class InputValidation {
 
-    Pattern p;
-    Matcher m;
+    private Pattern p;
+    private Matcher m;
 
     public boolean surfaceValidate(Surface surface, Coordinate coordinate){
 
@@ -52,5 +54,13 @@ public class InputValidation {
         }else {
             return false;
         }
+    }
+    public  String getOrientationType(String orientation) throws WrongNumberArgsException {
+        if(orientation.equals(OrientationTypeEnum.N.name()) || orientation.equals(OrientationTypeEnum.S.name())||orientation.equals(OrientationTypeEnum.W.name())||orientation.equals(OrientationTypeEnum.E.name())){
+            return orientation;
+        }else{
+            throw new WrongNumberArgsException("You have entered wrong Orientation type");
+        }
+
     }
 }

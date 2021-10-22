@@ -6,5 +6,5 @@ package com.nasa.rover.dao;
 import com.nasa.rover.model.Arrow;
 
 public interface Compass {
-     char getNextOrientation(Arrow arrow);
+     String getNextOrientation(Arrow arrow);
 }

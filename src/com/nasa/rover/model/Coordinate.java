@@ -8,16 +8,18 @@ public class Coordinate {
         return x;
     }
 
-    public void setX(int x) {
+    public String setX(int x) {
         this.x = x;
+        return "";
     }
 
     public int getY() {
         return y;
     }
 
-    public void setY(int y) {
+    public String setY(int y) {
         this.y = y;
+        return "";
     }
 
     private int  x;

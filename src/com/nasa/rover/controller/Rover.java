@@ -11,6 +11,8 @@ import com.nasa.rover.constant.ActionType;
 import com.nasa.rover.model.Arrow;
 import com.nasa.rover.model.Coordinate;
 
+import java.util.stream.Stream;
+
 public class Rover implements RoverDao {
 
     private Coordinate coordinate;
@@ -19,9 +21,9 @@ public class Rover implements RoverDao {
     private Compass compasserOrientationRight;
 
     private Movement movement;
-    private char nextOrientation;
+    private String nextOrientation;
 
-    public Rover(Coordinate coordinate,char orientation){
+        public Rover(Coordinate coordinate,String orientation){
 
         this.coordinate=coordinate;
         this.arrow=new Arrow(this.coordinate,orientation);
@@ -42,7 +44,7 @@ public class Rover implements RoverDao {
                 nextOrientation=compasserOrientationRight.getNextOrientation(arrow);
                 arrow.setHead(nextOrientation);
             }else if (path.charAt(i) == ActionType.MOVE){
-                movement.makeMovement(arrow,coordinate,nextOrientation);
+                movement.makeMovement(coordinate,nextOrientation);
 
             }
 
