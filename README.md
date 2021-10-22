@@ -3,7 +3,9 @@ THE MARS ROVER CHALLENGE
 
 To Execute the Application,
 
-Please find the Driver class name com.nasa.rover.main.Driver 
+Please find the Driver class name com.nasa.rover.main.Driver
+
+(Java Version 1.8)
 
 *INPUT AND OUTPUT*
 
